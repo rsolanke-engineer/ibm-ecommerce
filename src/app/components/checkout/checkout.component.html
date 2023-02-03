@@ -1,0 +1,215 @@
+<div class="main-content page-m">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <form [formGroup]="checkoutFormGroup" (ngSubmit)="onSubmit()">
+
+        <div formGroupName="customer" class="form-area">
+          <h3>Customer</h3>
+
+          <div class="row">
+            <div class="col-md-2">First Name</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="firstName" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Last Name</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="lastName" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Email</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="email" type="text">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div formGroupName="shippingAddress" class="form-area">
+          <h3>Shipping Address</h3>
+
+          <div class="row">
+            <div class="col-md-2">Country</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="country"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Street</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="street" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">City</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="city" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">State</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="state"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">zip code</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="zipCode" type="text">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div formGroupName="billingAddress" class="form-area">
+          <h3>Billing Address</h3>
+
+          <div class="row">
+            <div class="col-md-2">Country</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="country"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Street</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="street" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">City</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="city" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">State</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="state"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Zip Code</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="zipCode" type="text">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div formGroupName="creditCard" class="form-area">
+          <h3>Credit Card</h3>
+
+          <div class="row">
+            <div class="col-md-2">Card Type</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="cardType"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Name as seen on card</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="nameOnCard" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Card Number</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="cardNumber" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Security Code</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <input formControlName="securityCode" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Expiration Month</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="expirationMonth"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">Expiration Year</div>
+            <div class="col-md-9">
+              <div class="input-space">
+                <select formControlName="expirationYear"></select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-info">Purchase</button>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+
+
+
+</div>
